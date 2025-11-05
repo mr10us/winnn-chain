@@ -1,0 +1,627 @@
+<?php /* TEMPLATE NAME: Main Page */ ?>
+<?php get_header(); ?>
+
+<link rel="stylesheet" href="<?= THEME_PATH; ?>/assets/css/main.css">
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <h1><span>Winn Coin:</span> The Beating Heart of a Decentralized World</h1>
+    </div>
+
+    <div>
+      <p>Powering the Winn Chain ecosystem with a sustainable, deflationary token built for secure transactions, staking rewards, and global community growth</p>
+      <div class="annotation">
+        <svg class="reveal" data-anim="fade-up" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="<?= THEME_PATH; ?>/assets/img/globe.svg#icon"></use>
+        </svg>
+        <span data-stagger="0.3">
+          <p data-anim="enroll" data-num="+12,000">+12,000</p>
+          <p class="reveal" data-anim="slide-in-right">Users from the globe</p>
+        </span>
+      </div>
+
+      <div data-stagger="0.1">
+        <a href="#" class="btn secondary reveal" data-anim="fade-scale">
+          Explore the Technology
+          <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="<?= THEME_PATH; ?>/assets/img/globe.svg#icon"></use>
+            </svg>
+          </span>
+        </a>
+        <a href="<?= THEME_PATH; ?>/assets/docs/winn-coin-whitepaper_v3.1.pdf" target="_blank" class="btn secondary reveal" data-anim="fade-scale">
+          Read the Whitepaper
+          <span>
+            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="<?= THEME_PATH; ?>/assets/img/paperclip.svg#icon"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="total-supply reveal" data-anim="slide-in-right">
+      <span>
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="<?= THEME_PATH; ?>/assets/img/fire.svg#icon"></use>
+        </svg>
+        <p>Total Supply</p>
+      </span>
+      <p data-anim="enroll" data-num="$123,456,789,00">$123,456,789,00</p>
+    </div>
+  </div>
+  <svg fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use href="<?= THEME_PATH; ?>/assets/img/hero.svg#bg"></use>
+  </svg>
+</section>
+
+<section class="marquee">
+  <div class="swiper marquee-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.8572 0H11.1429V9.93067L4.12081 2.90862L2.90863 4.12081L9.93067 11.1429H0V12.8572H9.93066L2.90863 19.8792L4.12081 21.0913L11.1429 14.0693V24H12.8572V14.0693L19.8792 21.0913L21.0913 19.8792L14.0693 12.8572H24V11.1429H14.0693L21.0913 4.1208L19.8792 2.90862L12.8572 9.93066V0Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div class="swiper-slide">
+        <p>DeFi</p>
+      </div>
+      <div class="swiper-slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.8572 0H11.1429V9.93067L4.12081 2.90862L2.90863 4.12081L9.93067 11.1429H0V12.8572H9.93066L2.90863 19.8792L4.12081 21.0913L11.1429 14.0693V24H12.8572V14.0693L19.8792 21.0913L21.0913 19.8792L14.0693 12.8572H24V11.1429H14.0693L21.0913 4.1208L19.8792 2.90862L12.8572 9.93066V0Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div class="swiper-slide">
+        <p>Winn Chain ecosystem</p>
+      </div>
+      <div class="swiper-slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.8572 0H11.1429V9.93067L4.12081 2.90862L2.90863 4.12081L9.93067 11.1429H0V12.8572H9.93066L2.90863 19.8792L4.12081 21.0913L11.1429 14.0693V24H12.8572V14.0693L19.8792 21.0913L21.0913 19.8792L14.0693 12.8572H24V11.1429H14.0693L21.0913 4.1208L19.8792 2.90862L12.8572 9.93066V0Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div class="swiper-slide">
+        <p>Next-generation blockchain</p>
+      </div>
+      <div class="swiper-slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.8572 0H11.1429V9.93067L4.12081 2.90862L2.90863 4.12081L9.93067 11.1429H0V12.8572H9.93066L2.90863 19.8792L4.12081 21.0913L11.1429 14.0693V24H12.8572V14.0693L19.8792 21.0913L21.0913 19.8792L14.0693 12.8572H24V11.1429H14.0693L21.0913 4.1208L19.8792 2.90862L12.8572 9.93066V0Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div class="swiper-slide">
+        <p>Seamless Integration</p>
+      </div>
+      <div class="swiper-slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.8572 0H11.1429V9.93067L4.12081 2.90862L2.90863 4.12081L9.93067 11.1429H0V12.8572H9.93066L2.90863 19.8792L4.12081 21.0913L11.1429 14.0693V24H12.8572V14.0693L19.8792 21.0913L21.0913 19.8792L14.0693 12.8572H24V11.1429H14.0693L21.0913 4.1208L19.8792 2.90862L12.8572 9.93066V0Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div class="swiper-slide">
+        <p>Low-cost transactions</p>
+      </div>
+      <div class="swiper-slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.8572 0H11.1429V9.93067L4.12081 2.90862L2.90863 4.12081L9.93067 11.1429H0V12.8572H9.93066L2.90863 19.8792L4.12081 21.0913L11.1429 14.0693V24H12.8572V14.0693L19.8792 21.0913L21.0913 19.8792L14.0693 12.8572H24V11.1429H14.0693L21.0913 4.1208L19.8792 2.90862L12.8572 9.93066V0Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div class="swiper-slide">
+        <p>Delfationary Token</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="solution" class="problem">
+  <div class="container">
+    <h2 class="reveal" data-anim="fade-scale">Building a Fairer <span>Financial</span> Future</h2>
+
+    <div>
+      <ul data-stagger="0.3">
+        <li class="reveal" data-anim="slide-in-right">
+          <div>
+            <span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="<?= THEME_PATH; ?>/assets/img/annotation-alert.svg#icon"></use>
+              </svg>
+            </span>
+            <h3>The Problem</h3>
+          </div>
+          <p>
+            Traditional financial systems are slow, expensive, and exclusionary. Cross-border payments take days, intermediaries take a cut, and millions lack access to basic financial tools
+          </p>
+        </li>
+        <li class="fancy-border loading active reveal" data-anim="slide-in-right">
+          <div>
+            <span>
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="<?= THEME_PATH; ?>/assets/img/annotation-check.svg#icon"></use>
+              </svg>
+            </span>
+            <h3>Winn Coin's Solution</h3>
+          </div>
+          <p>
+            Winn Coin is the native currency of the Winn Chain, a next-generation blockchain. It's designed to facilitate instant, low-cost transactions, empower users through staking, and
+            foster a truly decentralized global economy. We're not just creating a coin; we're building the foundation for a new digital world
+          </p>
+        </li>
+      </ul>
+      <img class="reveal" data-anim="fade-scale" src="<?= THEME_PATH; ?>/assets/img/problem.png" alt="winn coin" width="100%" height="356" />
+    </div>
+  </div>
+</section>
+
+<section id="ecosystem" class="metrics">
+  <div class="container">
+    <span>
+      <h2 class="reveal" data-anim="slide-in-left">Live <span>Ecosystem</span> Metrics</h2>
+      <a href="#" class="btn secondary reveal" data-anim="slide-in-right" data-delay="0.3">
+        Go to Winn Scan
+        <span>
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#link"></use>
+          </svg>
+        </span>
+      </a>
+    </span>
+  </div>
+
+  <ul class="container" data-stagger="0.1">
+    <li class="reveal" data-anim="slide-in-left">
+      <div class="head">
+        <span class="fancy-border loading">
+          <svg width="36" height="40" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="<?= THEME_PATH; ?>/assets/img/lock.svg#icon"></use>
+          </svg>
+        </span>
+        <h3>Total Value Locked</h3>
+      </div>
+      <p data-anim="enroll" data-num="$26,488,900">$26,488,900</p>
+      <div class="footer">
+        <p>24h</p>
+        <span class="green" data-anim="enroll" data-num="+$1,998,000">+$1,998,000</span>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <div class="head">
+        <span class="fancy-border loading">
+          <svg viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.45833 13.5714H32.625M7.22817 1.25V4.46466M28.4583 1.25V4.46427M28.4583 4.46427H7.625C4.17322 4.46427 1.375 7.34242 1.375 10.8928V32.3215C1.375 35.8718 4.17322 38.75 7.625 38.75H28.4583C31.9101 38.75 34.7083 35.8718 34.7083 32.3215L34.7083 10.8928C34.7083 7.34242 31.9101 4.46427 28.4583 4.46427ZM12.8333 26.4285L15.9583 29.6428L23.25 22.1428"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+        <h3>Transactions to Date</h3>
+      </div>
+      <p data-anim="enroll" data-num="2,345">2,345</p>
+      <div class="footer">
+        <p>24h</p>
+        <span class="green" data-anim="enroll" data-num="+23">+23</span>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <div class="head">
+        <span class="fancy-border loading">
+          <svg width="36" height="40" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.0001 41C7.72917 41 1 34.6623 1 26.8723C1 16 16.0002 1 16.0002 1C16.0002 1 31 16 31 26.8723C31 34.6624 24.2711 41 16.0001 41ZM16.0001 41C11.8646 41 8.5 37.8312 8.5 33.9362C8.5 28.5 16.0001 21 16.0001 21C16.0001 21 23.5 28.5 23.5 33.9362C23.5 37.8312 20.1356 41 16.0001 41Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+        <h3>Total Winn Burned</h3>
+      </div>
+      <p data-anim="enroll" data-num="$26,488,900">$26,488,900</p>
+      <div class="footer">
+        <p>24h</p>
+        <span class="red" data-anim="enroll" data-num="-$22,234">-$22,234</span>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <div class="head">
+        <span class="fancy-border loading">
+          <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="<?= THEME_PATH; ?>/assets/img/wallet.svg#icon"></use>
+          </svg>
+        </span>
+        <h3>Active Staking Wallets</h3>
+      </div>
+      <p data-anim="enroll" data-num="4,009">4,009</p>
+      <div class="footer">
+        <p>24h</p>
+        <span class="red" data-anim="enroll" data-num="-22">-22</span>
+      </div>
+    </li>
+  </ul>
+
+  <a href="#" class="btn secondary">
+    Go to Winn Scan
+    <span>
+      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#link"></use>
+      </svg>
+    </span>
+  </a>
+</section>
+
+<section class="path">
+  <div class="container">
+    <h2>Our <span>Path</span> to Decentralization</h2>
+
+    <ul class="drag-scroll">
+      <li class="completed">
+        <div class="stage fancy-border loading"></div>
+        <span>2024</span>
+        <p>Completed</p>
+        <ul>
+          <li>
+            <p>Winn Chain Testnet Launch</p>
+          </li>
+          <li>
+            <p>Whitepaper V3.1 Release</p>
+          </li>
+        </ul>
+      </li>
+      <li class="in-progress">
+        <div class="stage fancy-border loading"></div>
+        <span>2025</span>
+        <p>Inprogress</p>
+        <ul>
+          <li>
+            <p>Winn Chain Mainnet Launch</p>
+          </li>
+          <li>
+            <p>Core Staking Platform Development</p>
+          </li>
+          <li>
+            <p>Initial Token Issuance</p>
+          </li>
+        </ul>
+      </li>
+      <li class="up-next">
+        <div class="stage fancy-border loading"></div>
+        <span>2026</span>
+        <p>Up Next</p>
+        <ul>
+          <li>
+            <p>Staking Rewards Activation</p>
+          </li>
+          <li>
+            <p>NFT-Based Country Wallet System Launch</p>
+          </li>
+        </ul>
+      </li>
+      <li class="up-next">
+        <div class="stage fancy-border loading"></div>
+        <span>2027</span>
+        <p>Beyond – Future</p>
+        <ul>
+          <li>
+            <p>StdApp & DeFi Ecosystem Expansion</p>
+          </li>
+          <li>
+            <p>Cross-Chain Interoperability</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="features" class="feature">
+  <div class="container">
+    <h2 class="reveal" data-anim="fade-up">The Pillars of <span>Winn</span> Coin</h2>
+
+    <ul>
+      <li class="reveal" data-anim="slide-in-left">
+        <span class="reveal" data-anim="fade-up">
+          Feaure 1:
+          <h3 class="reveal" data-anim="fade-up">Deflationary Economics</h3>
+        </span>
+        <p class="reveal" data-anim="fade-up">
+          A controlled issuance model with a 50% annual reduction in new coins, combined with a transaction fee burn mechanism, creates sustainable scarcity and long-term value appreciation.
+        </p>
+        <img class="reveal" data-anim="fade-scale" src="<?= THEME_PATH; ?>/assets/img/feature_1.png" alt="Deflationary Economics feature" width="100%" height="200" />
+      </li>
+      <li class="reveal" data-anim="slide-in-right">
+        <span class="reveal" data-anim="fade-up">
+          Feaure 2:
+          <h3 class="reveal" data-anim="fade-up">Staking for Security & Rewards</h3>
+        </span>
+        <p class="reveal" data-anim="fade-up">
+          Stake your Winn Coin to help secure the network and earn substantial rewards, calculated as half of the following year's issuance. Foster growth while you earn.
+        </p>
+        <img class="reveal" data-anim="fade-scale" src="<?= THEME_PATH; ?>/assets/img/feature_2.png" alt="Staking for Security & Rewards feature" width="100%" height="200" />
+      </li>
+      <li class="reveal" data-anim="slide-in-left">
+        <span class="reveal" data-anim="fade-up">
+          Feaure 3:
+          <h3 class="reveal" data-anim="fade-up">Global Community Distribution</h3>
+        </span>
+        <p class="reveal" data-anim="fade-up">
+          Our unique NFT-based Country Wallet System ensures fair and decentralized global distribution, empowering local communities to manage their own growth within the ecosystem.
+        </p>
+        <img class="reveal" data-anim="fade-scale" src="<?= THEME_PATH; ?>/assets/img/feature_3.png" alt="Global Community Distribution feature" width="100%" height="200" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="community" class="about container">
+  <div>
+    <h2 class="reveal" data-anim="fade-scale">A Community-Powered <span>Ecosystem</span></h2>
+
+    <h3 class="reveal" data-anim="fade-up">
+      The Winn vision is driven by our global community. To supercharge engagement and reward participation, we're excited to introduce <span>Warmy Token</span>
+    </h3>
+    <p class="reveal" data-anim="fade-scale">
+      Warmy is the community and engagement token of the Winn ecosystem. While Winn Coin serves as the core economic engine, Warmy is designed to incentivize and reward the everyday actions that
+      build our community: from content creation and social sharing to participating in governance polls and testing new features.
+    </p>
+  </div>
+
+  <img class="reveal" data-anim="fade-in" src="<?= THEME_PATH; ?>/assets/img/about.svg" alt="A Community-Powered Ecosystem" width="100%" height="320" />
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Explore the growing world of <span>Warmy</span> and see how you can contribute!</h2>
+    <a href="#" class="btn secondary">
+      Discover Warmy.world
+      <span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#link"></use>
+        </svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<section id="resource" class="journey">
+  <div class="container">
+    <h2 class="reveal" data-anim="fade-in">Your <span>Journey</span> Starts Here</h2>
+
+    <ul>
+      <li class="reveal" data-anim="slide-in-left">
+        <h3>Get a Wallet</h3>
+        <p>To hold Winn Coin, you'll need a compatible cryptocurrency wallet (e.g., MetaMask, Trust Wallet). Download and secure your wallet, never sharing your private keys!</p>
+      </li>
+      <li class="reveal" data-anim="slide-in-right">
+        <h3>Acquire Winn Coin</h3>
+        <p>
+          Once the token is live, you will be able to acquire WINN through our official partners and supported decentralized exchanges (DEXs). Stay tuned to our official channels for the latest
+          listing announcements.
+        </p>
+      </li>
+      <li class="reveal" data-anim="slide-in-left">
+        <h3>Stake or Use</h3>
+        <p>
+          Participate in network security and earn rewards by staking your Winn Coin. Alternatively, use Winn to pay for transaction fees and services within the growing Winn Chain dApp
+          ecosystem
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq" class="faq container">
+  <h2 class="reveal" data-anim="fade-up">FAQ</h2>
+
+  <ul data-stagger="0.3">
+    <li class="reveal" data-anim="slide-in-left">
+      <button class="accordion">
+        <p>What is the total supply of Winn Coin?</p>
+        <span>
+          <svg width="26" height="16" viewBox="0 0 26 16" fill="none">
+            <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#right"></use>
+          </svg>
+        </span>
+      </button>
+      <div class="panel">
+        <p>
+          Every transaction on Winn Chain pays a fee in WINN. These fees are permanently burned (sent to an irretrievable wallet), reducing the total supply and creating deflationary pressure
+        </p>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <button class="accordion">
+        <p>How does the token burn work?</p>
+        <span>
+          <svg width="26" height="16" viewBox="0 0 26 16" fill="none">
+            <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#right"></use>
+          </svg>
+        </span>
+      </button>
+      <div class="panel">
+        <p>
+          Every transaction on Winn Chain pays a fee in WINN. These fees are permanently burned (sent to an irretrievable wallet), reducing the total supply and creating deflationary pressure
+        </p>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <button class="accordion">
+        <p>What is the relationship between Winn Coin and Warmy Token?</p>
+        <span>
+          <svg width="26" height="16" viewBox="0 0 26 16" fill="none">
+            <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#right"></use>
+          </svg>
+        </span>
+      </button>
+      <div class="panel">
+        <p>
+          Every transaction on Winn Chain pays a fee in WINN. These fees are permanently burned (sent to an irretrievable wallet), reducing the total supply and creating deflationary pressure
+        </p>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <button class="accordion">
+        <p>When can I start staking?</p>
+        <span>
+          <svg width="26" height="16" viewBox="0 0 26 16" fill="none">
+            <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#right"></use>
+          </svg>
+        </span>
+      </button>
+      <div class="panel">
+        <p>
+          Every transaction on Winn Chain pays a fee in WINN. These fees are permanently burned (sent to an irretrievable wallet), reducing the total supply and creating deflationary pressure
+        </p>
+      </div>
+    </li>
+    <li class="reveal" data-anim="slide-in-left">
+      <button class="accordion">
+        <p>Is Winn Coin a good investment?</p>
+        <span>
+          <svg width="26" height="16" viewBox="0 0 26 16" fill="none">
+            <use href="<?= THEME_PATH; ?>/assets/img/arrows.svg#right"></use>
+          </svg>
+        </span>
+      </button>
+      <div class="panel">
+        <p>
+          Every transaction on Winn Chain pays a fee in WINN. These fees are permanently burned (sent to an irretrievable wallet), reducing the total supply and creating deflationary pressure
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="security" class="foundation">
+  <div class="container">
+    <h2 class="reveal" data-anim="fade-up">Build on a <span>Foundation</span> of Trust</h2>
+    <p class="reveal" data-anim="fade-scale">Transparency and security are our highest priorities</p>
+
+    <h3 class="reveal" data-anim="fade-up">Smart Contract Audits In Progress</h3>
+
+    <ul data-stagger="0.1">
+      <li class="reveal fancy-border loading" data-anim="slide-in-left">
+        <img src="<?= THEME_PATH; ?>/assets/img/certik.png" alt="CERTIK logo" width="100" height="100" />
+      </li>
+      <li class="reveal fancy-border loading" data-anim="slide-in-right">
+        <img src="<?= THEME_PATH; ?>/assets/img/hacken.png" alt="HACKEN logo" width="100" height="100" />
+      </li>
+      <li class="reveal fancy-border loading" data-anim="slide-in-left">
+        <img src="<?= THEME_PATH; ?>/assets/img/certik.png" alt="CERTIK logo" width="100" height="100" />
+      </li>
+      <li class="reveal fancy-border loading" data-anim="slide-in-right">
+        <img src="<?= THEME_PATH; ?>/assets/img/hacken.png" alt="HACKEN logo" width="100" height="100" />
+      </li>
+      <li class="reveal fancy-border loading" data-anim="slide-in-left">
+        <img src="<?= THEME_PATH; ?>/assets/img/certik.png" alt="CERTIK logo" width="100" height="100" />
+      </li>
+      <li class="reveal fancy-border loading" data-anim="slide-in-right">
+        <img src="<?= THEME_PATH; ?>/assets/img/hacken.png" alt="HACKEN logo" width="100" height="100" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="team container">
+  <h2 class="reveal" data-anim="fade-up">Team</h2>
+
+  <p class="reveal" data-anim="fade-scale">Backed by a dedicated team with decades of combined experience in blockchain, fintech, and community development</p>
+  <div class="swiper team-swiper">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+      <li class="swiper-slide">
+        <div class="fancy-border loading">
+          <img src="<?= THEME_PATH; ?>/assets/img/temp_team.jpg" alt="team member" width="150" height="150" />
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>CEO</p>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="technology">
+  <div class="container">
+    <h2>Technology</h2>
+    <p>Built on the multi-dimensional Winn Chain, proactively integrating post-quantum cryptography for future-proof security</p>
+  </div>
+
+  <span>
+    <svg width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <use href="<?= THEME_PATH; ?>/assets/img/footer_bg.svg#bg"></use>
+    </svg>
+    <img src="<?= THEME_PATH; ?>/assets/img/coin.png" alt="coin image" width="150" height="150" />
+  </span>
+</section>
+
+<?php get_footer(); ?>
