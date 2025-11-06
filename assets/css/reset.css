@@ -145,6 +145,12 @@ ul {
   }
 }
 
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 section {
   padding-block: var(--section-padding, 100px);
   scroll-margin-top: var(--header-height);

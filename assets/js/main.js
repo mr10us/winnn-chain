@@ -5,6 +5,7 @@ async function init() {
     await ensureSwiper();
     initialiseSliders();
     setUpFancyBorders();
+    calculateCalculator();
   } catch (e) {
     console.error("Swiper load failed:", e);
   } finally {
@@ -139,8 +140,7 @@ function waitForGlobal(check, timeout = 5000, interval = 50) {
 
 function initialiseSliders() {
   const ecosystemSwiper = new Swiper(".ecosystem-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 12,
+    slidesPerView: "auto",
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -148,23 +148,6 @@ function initialiseSliders() {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 16,
-      },
-      1280: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 16,
-      },
-      1440: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 16,
-      },
     },
   })
 
@@ -303,4 +286,29 @@ function setUpFancyBorders() {
   borders.forEach((border) => {
     observer.observe(border);
   });
+}
+
+
+function calculateCalculator() {
+  // коэффициент: 12000 / 50000 = 0.24
+  const rate = 0.24
+
+  const input = document.getElementById('winn-input')
+  const result = document.getElementById('winn-result')
+
+  input.addEventListener('input', () => {
+    const value = parseFloat(input.value.replace(/\s+/g, ''))
+    if (isNaN(value)) {
+      result.textContent = '0'
+      return
+    }
+
+    // считаем вознаграждение
+    const reward = value * rate
+
+    // форматируем с разделителями тысяч
+    result.textContent = reward.toLocaleString('en-US', {
+      maximumFractionDigits: 0,
+    })
+  })
 }

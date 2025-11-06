@@ -76,12 +76,12 @@
         <img src="assets/img/logo.svg" alt="Winn Chain logo" width="100%" height="100%" />
       </a>
 
-      <a href="#" class="btn primary">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="/assets/img/home.svg#icon"></use>
-        </svg>
-      </a>
       <nav>
+        <a href="#" class="btn primary">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="/assets/img/home.svg#icon"></use>
+          </svg>
+        </a>
         <ul data-stagger="0.1">
           <li class="reveal" data-anim="slide-in-right"><a href="#">Uniqueness</a></li>
           <li class="reveal" data-anim="slide-in-right"><a href="#">Developer Hub</a></li>
@@ -125,13 +125,13 @@
         <img src="/assets/img/main/honeycomb.png" alt="background image" width="700" height="100%" />
         <div class="container">
           <div class="content">
-            <h1><span>Winn Chain</span>: The High-Performance Layer-1, Built for the Future of dApps</h1>
-            <p>
+            <h1 class="reveal" data-anim="slide-in-right"><span>Winn Chain</span>: The High-Performance Layer-1, Built for the Future of dApps</h1>
+            <p class="reveal" data-anim="slide-in-right" data-delay="0.1">
               Experience Ethereum-compatible development with unparalleled speed, low-cost transactions, and a security-first Proof-of-Stake architecture. Build, scale, and innovate without compromise
             </p>
 
             <span>
-              <a href="#" class="btn secondary">
+              <a href="#" class="btn secondary reveal" data-anim="fade-up">
                 Start Building on Testnet
                 <span>
                   <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +139,7 @@
                   </svg>
                 </span>
               </a>
-              <a href="#" class="btn secondary">
+              <a href="#" class="btn secondary reveal" data-anim="fade-up" data-delay="0.3">
                 Explore Enterprise Use Cases
                 <span>
                   <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -149,15 +149,22 @@
               </a>
             </span>
           </div>
-          <div class="cube"></div>
+          <div class="cube" data-stagger="0.5">
+            <img src="/assets/img/main/cube_2.png" alt="cube 1" width="200" height="200">
+            <img src="/assets/img/main/cube_2.png" alt="cube 2" width="90" height="90">
+
+            <img class="reveal" data-anim="fade-in" src="/assets/img/main/hero/disk_1.png" alt="disk 1: Consensus" width="200" height="170">
+            <img class="reveal" data-anim="fade-in" src="/assets/img/main/hero/disk_2.png" alt="disk 2: EVM" width="200" height="170">
+            <img class="reveal" data-anim="fade-in" src="/assets/img/main/hero/disk_3.png" alt="disk 3: Security" width="200" height="170">
+          </div>
         </div>
       </section>
 
       <section class="uniqueness container">
-        <h2><span>Engineered</span> for Performance and Scale</h2>
+        <h2 class="reveal" data-anim="slide-in-right"><span>Engineered</span> for Performance and Scale</h2>
 
         <ul>
-          <li>
+          <li class="reveal" data-anim="slide-in-right">
             <div>
               <h3>Ethereum Virtual Machine (EVM) Compatibility</h3>
               <p>
@@ -167,7 +174,7 @@
             </div>
             <img src="/assets/img/main/uniqueness/uniqueness_1.png" alt="vm" width="100%" height="224" />
           </li>
-          <li>
+          <li class="reveal" data-anim="slide-in-right">
             <div>
               <h3>Secure, Sustainable, and Energy-Efficient</h3>
               <p>
@@ -177,7 +184,7 @@
             </div>
             <img src="/assets/img/main/uniqueness/uniqueness_2.png" alt="vm" width="100%" height="224" />
           </li>
-          <li>
+          <li class="reveal" data-anim="slide-in-right">
             <div>
               <h3>High Throughput, Instant Finality</h3>
               <p>
@@ -193,23 +200,23 @@
       <section class="start">
         <img src="/assets/img/main/honeycomb.png" alt="honeycomb bg" width="700" height="800" />
         <div class="container">
-          <h2>Everything You Need to <span>Build, Deploy,</span> and <span>Grow</span></h2>
-          <p>Get Started in <span>5 Minutes</span>. A quick-start guide</p>
+          <h2 class="reveal" data-anim="fade-in">Everything You Need to <span>Build, Deploy,</span> and <span>Grow</span></h2>
+          <p class="reveal" data-anim="fade-in">Get Started in <span>5 Minutes</span>. A quick-start guide</p>
 
-          <ul>
-            <li class="fancy-border loading">
+          <ul data-stagger="0.07">
+            <li class="fancy-border loading reveal" data-anim="fade-scale">
               <h3>Connect Your Wallet</h3>
               <p>Use MetaMask by adding the Winn Chain Testnet network</p>
               <button class="btn">View Instructions</button>
               <img src="/assets/img/main/start/start_1.png" alt="decorative image" width="140" height="100%" />
             </li>
-            <li class="fancy-border loading active">
+            <li class="fancy-border loading reveal" data-anim="fade-scale">
               <h3>Get Testnet WINN</h3>
               <p>Use the button below to get free test network tokens.</p>
               <button class="btn">Faucet</button>
               <img src="/assets/img/main/start/start_2.png" alt="decorative image" width="140" height="100%" />
             </li>
-            <li class="fancy-border loading">
+            <li class="fancy-border loading reveal" data-anim="fade-scale">
               <h3>Deploy a Contract</h3>
               <p>Use our pre-builtHello World' smart contract tutorial to make your first deployment</p>
               <button class="btn">View Instructions</button>
@@ -220,10 +227,10 @@
       </section>
 
       <section class="docs container">
-        <h2>Comprehensive <span>Documentation</span></h2>
+        <h2 class="reveal" data-anim="fade-in">Comprehensive <span>Documentation</span></h2>
 
-        <ul>
-          <li class="fancy-border loading">
+        <ul data-stagger="0.3">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/docs/docs_1.png" alt="" width="160" height="160" />
             <h3>Architecture Overview</h3>
             <a href="#" target="_blank">
@@ -232,7 +239,7 @@
               </svg>
             </a>
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/docs/docs_2.png" alt="" width="160" height="160" />
             <h3>API References</h3>
             <a href="#" target="_blank">
@@ -241,7 +248,7 @@
               </svg>
             </a>
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/docs/docs_3.png" alt="" width="160" height="160" />
             <h3>Smart Contract Guides</h3>
             <a href="#" target="_blank">
@@ -250,7 +257,7 @@
               </svg>
             </a>
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/docs/docs_4.png" alt="" width="160" height="160" />
             <h3>Node/Validator Setup</h3>
             <a href="#" target="_blank">
@@ -266,21 +273,21 @@
         <img src="/assets/img/main/cube_2.png" alt="cube 2" width="200" height="200" />
         <img src="/assets/img/main/cube_1.png" alt="cube 1" width="170" height="150" />
         <div class="container">
-          <h2>SDKs & <span>Tools</span></h2>
-          <p>Leverage our powerful tools to accelerate ypur development</p>
+          <h2 class="reveal" data-anim="fade-in">SDKs & <span>Tools</span></h2>
+          <p class="reveal" data-anim="fade-in">Leverage our powerful tools to accelerate ypur development</p>
 
-          <ul>
-            <li class="fancy-border loading">
+          <ul data-stagger="0.3">
+            <li class="fancy-border loading reveal" data-anim="slide-in-right">
               <h3>Winn Chain CLI</h3>
               <p>A command-line interface for node management and smart contract interactions</p>
               <a href="#" class="btn primary">Download & Docs</a>
             </li>
-            <li class="fancy-border loading">
+            <li class="fancy-border loading reveal" data-anim="slide-in-right">
               <h3>JavaScript/Python SDK</h3>
               <p>Libraries to interact with the blockchain from your application</p>
               <a href="#" class="btn primary">GitHub Link</a>
             </li>
-            <li class="fancy-border loading">
+            <li class="fancy-border loading reveal" data-anim="slide-in-right">
               <h3>Hardhat & Truffle Plugins:</h3>
               <p>Plugins for popular Ethereum development frameworks to seamlessly target Winn Chain</p>
               <a href="#" class="btn primary">Setup Guide</a>
@@ -310,28 +317,28 @@
         <img src="/assets/img/main/cone.png" alt="cone" width="170" height="180" />
         <img src="/assets/img/main/rock.png" alt="rock" width="175" height="170" />
         <div class="container">
-          <h2>Enterprise-Grade <span>Blockchain</span> Infrastructure</h2>
-          <p>Leverage the security and transparency of decentralization with the performance and support your business demands</p>
+          <h2 class="reveal" data-anim="fade-in">Enterprise-Grade <span>Blockchain</span> Infrastructure</h2>
+          <p class="reveal" data-anim="fade-in">Leverage the security and transparency of decentralization with the performance and support your business demands</p>
 
-          <ul>
+          <ul data-stagger="0.3">
             <li>
               <h3>Use <span>Cases</span></h3>
             </li>
-            <li>
+            <li class="reveal" data-anim="slide-in-right">
               <span>
                 <img src="/assets/img/main/infrastructure/infrastructure_1.png" alt="infrastructure" width="20" height="20" />
                 <h3>Supply Chain Provenance</h3>
               </span>
               <p>Create an immutable record of a product's journey from origin to consumer, reducing fraud and increasing trust</p>
             </li>
-            <li>
+            <li class="reveal" data-anim="slide-in-right">
               <span>
                 <img src="/assets/img/main/infrastructure/infrastructure_2.png" alt="infrastructure" width="20" height="20" />
                 <h3>Secure Digital Identity</h3>
               </span>
               <p>Give users control over their identity data with verifiable credentials on a tamper-proof ledger</p>
             </li>
-            <li>
+            <li class="reveal" data-anim="slide-in-right">
               <span>
                 <img src="/assets/img/main/infrastructure/infrastructure_3.png" alt="infrastructure" width="20" height="20" />
                 <h3>DeFi and Tokenization</h3>
@@ -346,27 +353,27 @@
         <h2>Our <span>Infrastructure</span> & Integration Partners</h2>
 
         <ul>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-left">
             <img src="/assets/img/main/partners/partner_1.png" alt="partner" width="150" height="150" />
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/partners/partner_1.png" alt="partner" width="150" height="150" />
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-left">
             <img src="/assets/img/main/partners/partner_1.png" alt="partner" width="150" height="150" />
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/partners/partner_1.png" alt="partner" width="150" height="150" />
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-left">
             <img src="/assets/img/main/partners/partner_1.png" alt="partner" width="150" height="150" />
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="slide-in-right">
             <img src="/assets/img/main/partners/partner_1.png" alt="partner" width="150" height="150" />
           </li>
         </ul>
 
-        <a href="#" class="btn secondary">
+        <a href="#" class="btn secondary reveal" data-anim="fade-up">
           Schedule a Technical Consultation
           <span>
             <svg width="15" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +383,7 @@
         </a>
       </section>
 
-      <section class="ecosystem container">
+      <section class="ecosystem container" id="ecosystem">
         <span>
           <h2>Join a Thriving <span>Ecosystem</span>!</h2>
           <p>Discover the innovative projects already building the decentralized future on Winn Chain</p>
@@ -387,83 +394,25 @@
             <use href="/assets/img/main/filter.svg#icon"></use>
           </svg>
           <ul>
-            <li class="active">DeFi</li>
-            <li>NFTs & Gaming</li>
-            <li>DAOs & Governance</li>
-            <li>Infrastructure</li>
+            <li class="reveal" data-anim="slide-in-right" role="button" tabindex="0" v-for="category in categories" :key="category" :class="{ active: category === activeCategory }" @click="activeCategory = category">{{ category }}</li>
           </ul>
         </div>
 
         <div class="swiper ecosystem-swiper">
           <ul class="swiper-wrapper">
-            <li class="swiper-slide" style="background-image: url('/assets/img/main/ecosystem/ecosystem_1.jpg')">
+            <li v-for="(project, i) in filteredProjects" :key="i" class="swiper-slide" :style="{ backgroundImage: `url(${project.image})` }">
               <div>
                 <div class="author">
                   <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="/assets/img/main/person.svg#icon"></use>
                   </svg>
-                  <p>AuthorDX822</p>
+                  <p>{{ project.author }}</p>
                 </div>
-                <h3>Project Name</h3>
-                <p>Discription of this project. Lorem ipsum lorem ipsum.</p>
+                <h3>{{ project.name }}</h3>
+                <p>{{ project.description }}</p>
               </div>
 
-              <a href="#" class="btn">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <use href="/assets/img/main/arrows.svg#link"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="swiper-slide" style="background-image: url('/assets/img/main/ecosystem/ecosystem_2.jpg')">
-              <div>
-                <div class="author">
-                  <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/img/main/person.svg#icon"></use>
-                  </svg>
-                  <p>AuthorDX822</p>
-                </div>
-                <h3>Project Name</h3>
-                <p>Discription of this project. Lorem ipsum lorem ipsum.</p>
-              </div>
-
-              <a href="#" class="btn">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <use href="/assets/img/main/arrows.svg#link"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="swiper-slide" style="background-image: url('/assets/img/main/ecosystem/ecosystem_3.jpg')">
-              <div>
-                <div class="author">
-                  <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/img/main/person.svg#icon"></use>
-                  </svg>
-                  <p>AuthorDX822</p>
-                </div>
-                <h3>Project Name</h3>
-                <p>Discription of this project. Lorem ipsum lorem ipsum.</p>
-              </div>
-
-              <a href="#" class="btn">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <use href="/assets/img/main/arrows.svg#link"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="swiper-slide" style="background-image: url('/assets/img/main/ecosystem/ecosystem_1.jpg')">
-              <div>
-                <div class="author">
-                  <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/img/main/person.svg#icon"></use>
-                  </svg>
-                  <p>AuthorDX822</p>
-                </div>
-                <h3>Project Name</h3>
-                <p>Discription of this project. Lorem ipsum lorem ipsum.</p>
-              </div>
-
-              <a href="#" class="btn">
+              <a :href="project.link" class="btn">
                 <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                   <use href="/assets/img/main/arrows.svg#link"></use>
                 </svg>
@@ -548,7 +497,7 @@
           <h2>Building the <span>Future</span>, Step by Step</h2>
 
           <ul>
-            <li class="completed">
+            <li class="completed" >
               <div class="image fancy-border loading">
                 <img src="/assets/img/main/completed.png" alt="upnext icon" width="75" height="55" />
               </div>
@@ -611,17 +560,17 @@
       </section>
 
       <section class="join container">
-        <h2>Secure the <span>Network</span>. Earn Rewards</h2>
-        <p>Join the decentralized core of Winn Chain by running a validator node or delegating your stakes</p>
+        <h2 class="reveal" data-anim="fade-in">Secure the <span>Network</span>. Earn Rewards</h2>
+        <p class="reveal" data-anim="fade-in">Join the decentralized core of Winn Chain by running a validator node or delegating your stakes</p>
 
         <h3>Validaor Requirements</h3>
         <ul>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="fade-scale">
             <p>Minimum Stake</p>
             <span>50,000 WINN</span>
             <img src="/assets/img/main/join/join_1.png" alt="winn coin image" width="140" height="140" />
           </li>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="fade-scale">
             <p>Recommended Hardware</p>
             <span>8-core CPU</span>
             <span>32GB RAM</span>
@@ -637,14 +586,14 @@
 
         <div class="container">
           <div>
-            <form action="#">
+            <form action="#" onsubmit="return false;">
               <h2>Rewards Calculator</h2>
               <p>Enter the number of WINN</p>
-              <input type="text" name="winn" inputmode="decimal" placeholder="Enter the number of WINN" />
+              <input id="winn-input" type="text" name="winn" inputmode="decimal" placeholder="Enter the number of WINN" />
             </form>
             <div class="result">
               <p>Your annual remuneration for your share:</p>
-              <span data-winn="WINN">1,200</span>
+              <span id="winn-result" data-winn="WINN">1,200</span>
             </div>
           </div>
         </div>
@@ -652,7 +601,7 @@
 
       <section class="node container">
         <ul>
-          <li class="fancy-border loading">
+          <li class="fancy-border loading reveal" data-anim="fade-scale">
             <div>
               <h3>Ready to run a <span>node</span>?</h3>
               <p>Follow our comprehensive validator setup guide</p>
@@ -666,7 +615,7 @@
               </span>
             </a>
           </li>
-          <li>
+          <li class="reveal" data-anim="fade-scale">
             <div>
               <h3><span>Don't</span> want to run a node?</h3>
               <p>Choose a validator and delegate your WINN to participate in securing the network and earning rewards</p>
@@ -953,7 +902,7 @@
           Join Our Community
           <span>
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-              <use href="/assets/img/arrows.svg#link"></use>
+              <use href="/assets/img/main/arrows.svg#link"></use>
             </svg>
           </span>
         </a>
@@ -965,8 +914,67 @@
     </footer>
 
     <script type="text/javascript" src="/assets/js/main.js"></script>
-    <script type="text/javascript" src="/assets/js/accordion.js"></script>
     <script type="text/javascript" src="/assets/js/animation.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script>
+    const { createApp, ref, computed } = Vue
+
+    createApp({
+      setup() {
+        const categories = ['DeFi', 'NFTs & Gaming', 'DAOs & Governance', 'Infrastructure']
+        const activeCategory = ref('DeFi')
+
+        const projects = ref([
+          {
+            name: 'DeFi Project Alpha',
+            author: 'AuthorDX822',
+            description: 'Liquidity protocol on Winn Chain.',
+            category: 'DeFi',
+            image: '/assets/img/main/ecosystem/ecosystem_1.jpg',
+            link: '#',
+          },
+          {
+            name: 'WinnVerse',
+            author: 'AuthorDX822',
+            description: 'NFT metaverse project.',
+            category: 'NFTs & Gaming',
+            image: '/assets/img/main/ecosystem/ecosystem_2.jpg',
+            link: '#',
+          },
+          {
+            name: 'DAO Collective',
+            author: 'AuthorDX822',
+            description: 'Governance protocol for decentralized decisions.',
+            category: 'DAOs & Governance',
+            image: '/assets/img/main/ecosystem/ecosystem_3.jpg',
+            link: '#',
+          },
+          {
+            name: 'NodeLink',
+            author: 'AuthorDX822',
+            description: 'Infrastructure tools for Winn Chain.',
+            category: 'Infrastructure',
+            image: '/assets/img/main/ecosystem/ecosystem_1.jpg',
+            link: '#',
+          },
+          {
+            name: 'YieldCraft',
+            author: 'AuthorDX822',
+            description: 'Yield optimizer for DeFi protocols.',
+            category: 'DeFi',
+            image: '/assets/img/main/ecosystem/ecosystem_2.jpg',
+            link: '#',
+          },
+        ])
+
+        const filteredProjects = computed(() =>
+          projects.value.filter(p => p.category === activeCategory.value)
+        )
+
+        return { categories, activeCategory, projects, filteredProjects }
+      },
+    }).mount('#ecosystem')
+  </script>
     <!-- <script type="text/javascript" src="/assets/js/rollingNumbers.js"></script> -->
     <script type="text/javascript" src="/assets/js/header.js"></script>
   </body>
