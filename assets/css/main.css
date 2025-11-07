@@ -51,7 +51,7 @@ section.hero p {
 section.hero .container {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 8rem;
+  row-gap: 4rem;
 }
 section.hero .container .cube {
   position: relative;
@@ -75,7 +75,7 @@ section.hero .container .cube > img[alt*="disk"] {
   left: 50%;
 
   display: block;
-  width: 60%;
+  width: 90%;
   height: auto;
 
   transform: translate(-50%, -50%);
@@ -109,6 +109,9 @@ section.hero .content > span {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     column-gap: 5rem;
+  }
+  section.hero .container .cube > img[alt*="disk"] {
+    width: 60%;
   }
 }
 

@@ -394,7 +394,7 @@
             <use href="/assets/img/main/filter.svg#icon"></use>
           </svg>
           <ul>
-            <li class="reveal" data-anim="slide-in-right" role="button" tabindex="0" v-for="category in categories" :key="category" :class="{ active: category === activeCategory }" @click="activeCategory = category">{{ category }}</li>
+            <li role="button" tabindex="0" v-for="category in categories" :key="category" :class="{ active: category === activeCategory }" @click="activeCategory = category">{{ category }}</li>
           </ul>
         </div>
 
