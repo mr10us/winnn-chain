@@ -220,6 +220,7 @@ section.start .container ul {
 }
 section.start .container ul li {
   display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 1rem;
   border-radius: 14px;
   padding: 40px 30px;
@@ -241,6 +242,10 @@ section.start .container ul li::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0c0c0c;
   -webkit-text-stroke: 1px transparent;
+}
+
+section.start .container ul li > * {
+  grid-column: 1;
 }
 
 section.start .container ul li > img {
@@ -407,7 +412,7 @@ section.tools > img[alt*="cube 1"] {
 section.tools > img[alt*="cube 2"] {
   position: absolute;
   left: -5em;
-  top: 5rem;
+  top: 10rem;
   z-index: -1;
 }
 
