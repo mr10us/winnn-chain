@@ -80,6 +80,7 @@
 }
 
 header:has(.burger.active) .mobile-menu {
+  overflow-y: scroll;
   grid-template-rows: 1fr;
   padding: 20px;
 }
@@ -174,6 +175,7 @@ header nav ul li a:active {
 
   .mobile-menu .menu__content > nav ul {
     justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
   }
   .mobile-menu .menu__content .btn {
     margin-inline: 0;
