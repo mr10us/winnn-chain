@@ -50,7 +50,7 @@ section.hero p {
 
 section.hero .container {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 0.5fr;
   row-gap: 4rem;
 }
 section.hero .container .cube {
@@ -60,6 +60,9 @@ section.hero .container .cube > img[alt="cube 1"] {
   position: absolute;
   top: 0;
   left: 0;
+
+  user-select: none;
+  pointer-events: none;
 }
 section.hero .container .cube > img[alt="cube 2"] {
   position: absolute;
@@ -67,6 +70,9 @@ section.hero .container .cube > img[alt="cube 2"] {
   right: 0;
   
   transform: scaleX(-1) rotate(-20deg);
+
+  user-select: none;
+  pointer-events: none;
 }
 
 section.hero .container .cube > img[alt*="disk"] {
@@ -103,6 +109,20 @@ section.hero .content > span {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 420px) {
+  section.hero .container {
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  section.hero .container {
+    row-gap: 10rem;
+  }
+  section.hero .container .cube > img[alt*="disk"] {
+    width: 70%;
+  }
+}
 
 @media screen and (min-width: 1280px) {
   section.hero .container {
