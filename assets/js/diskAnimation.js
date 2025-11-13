@@ -1,5 +1,43 @@
 gsap.registerPlugin(ScrollTrigger);
 
+let tl = null;
+
+function throttle(fn, wait) {
+  let lastTime = 0;
+  return function(...args) {
+    const now = Date.now();
+    if (now - lastTime >= wait) {
+      lastTime = now;
+      fn.apply(this, args);
+    }
+  };
+}
+
+function clearAnimations() {
+  // Снимаем pin со всех ScrollTriggers
+  ScrollTrigger.getAll().forEach(st => {
+    if (st.pin) {
+      gsap.set(st.pin, { clearProps: "all" });
+
+      if (st.pinSpacer) {
+        gsap.set(st.pinSpacer, { clearProps: "all" });
+      }
+    }
+    st.kill(true);
+  });
+
+  // Убиваем timeline
+  if (tl) {
+    tl.kill();
+    tl = null;
+  }
+
+  // Чистим диски
+  gsap.set(".cube .toAnimate", { clearProps: "all" });
+}
+
+
+
 function setupAnimation() {
   if (!window.matchMedia("(min-width: 1280px)").matches) return;
   const section = document.querySelector(".hero");
@@ -28,7 +66,7 @@ function setupAnimation() {
     transform: "translateX(-50%)",
   });
 
-  const tl = gsap.timeline({
+  tl = gsap.timeline({
     scrollTrigger: {
       trigger: section,
       start: "top top",
@@ -119,3 +157,15 @@ function setupAnimation() {
 }
 
 window.addEventListener("DOMContentLoaded", setupAnimation);
+
+/* 
+  Throttled resize — перезапуск анимации
+*/
+window.addEventListener(
+  "resize",
+  throttle(() => {
+    clearAnimations();
+    setupAnimation();
+    ScrollTrigger.refresh();
+  }, 300)
+);
