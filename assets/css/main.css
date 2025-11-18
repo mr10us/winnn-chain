@@ -482,6 +482,12 @@ section.tools .container ul li .btn {
   padding-block: 10.5px;
 }
 
+@media screen and (min-width: 1024px) {
+  section.tools > img[alt*="cube 2"] {
+    top: 12rem;
+  }
+}
+
 /* ––––––––––– CTA ––––––––– */
 
 section.cta {
